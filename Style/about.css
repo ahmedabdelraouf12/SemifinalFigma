@@ -121,26 +121,27 @@ body {
       
       opacity: 1;
     } */
-    
-      img {
-        width: 445px;
-        height: 520px;
+
+    img {
+      /* width: 445px;
+        height: 520px; */
+      opacity: 1;
+      object-fit: cover;
+
+      @media (max-width: 767.98px) {
+        width: 290px;
+        height: 390px;
+        angle: 0 deg;
         opacity: 1;
-
-        @media (max-width: 767.98px) {
-          width: 290px;
-          height: 390px;
-          angle: 0 deg;
-          opacity: 1;
-
-        }
-        @media (min-width: 768px) and (max-width: 991.98px) {
-          width: 240px;
-          height: 456px;
-          angle: 0 deg;
-          opacity: 1;
-        }
-      
+        object-fit: cover;
+      }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        width: 150px;
+        height: 520px;
+        angle: 0 deg;
+        opacity: 1;
+        object-fit: cover;
+      }
     }
     .comments {
       h2 {
@@ -148,13 +149,16 @@ body {
         font-family: Fraunces;
         font-weight: 900;
         font-style: Black;
-        font-size: clamp(28px, 10vw, 40px);
+        font-size: clamp(28px, 4vw, 40px);
         line-height: 120%;
         letter-spacing: 0px;
-         @media (max-width: 767.98px) {
-          margin-bottom: 20px;
-          margin-top: 48px;
-
+        @media (max-width: 767.98px) {
+          margin-bottom: 20px !important;
+          margin-top: 48px !important;
+        }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          margin-top: 90px !important;
+          margin-bottom: 32px !important;
         }
       }
       p {
@@ -166,6 +170,9 @@ body {
         font-size: 16px;
         line-height: 160%;
         letter-spacing: 0px;
+         @media (min-width: 768px) and (max-width: 991.98px) {
+          margin-bottom: 90px !important;
+        }
       }
     }
   }
