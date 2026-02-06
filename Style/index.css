@@ -83,7 +83,7 @@ body {
       /* background-color: #333d4b; */
       h1 {
         margin-bottom: 32px;
-        width: clamp(295px, 34vw, 493px);
+        width: clamp(220px, 34vw, 493px);
         /* height: 145; */
         opacity: 1;
         /* padding-right: 10px; */
@@ -96,7 +96,7 @@ body {
       }
       p {
         margin-bottom: 48px;
-        width: clamp(295px, 34vw, 493px);
+        width: clamp(247px, 34vw, 493px);
         /* height: 78px; */
 
         opacity: 0.8;
@@ -380,7 +380,7 @@ body {
             font-family: Fraunces;
             font-weight: 900;
             font-style: Black;
-            font-size: 32px;
+            font-size: 31px;
             line-height: 113.99999999999999%;
             letter-spacing: 0px;
           }
@@ -424,5 +424,8 @@ body {
     line-height: 130%;
     letter-spacing: 0.92px;
     text-transform: uppercase;
+     @media (max-width: 374px) {
+         font-size: 8px;
+        }
   }
 }
