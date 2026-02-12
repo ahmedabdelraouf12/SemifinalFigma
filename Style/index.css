@@ -53,11 +53,11 @@ body {
 
   .mainPhoto {
     background-image: url(../image/Hero\ Image.svg);
-        opacity: 1;
+    opacity: 1;
 
-      @media screen and (max-width: 767.98px) {
-       opacity: .8;
-}
+    @media screen and (max-width: 767.98px) {
+      opacity: 0.8;
+    }
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -123,7 +123,6 @@ body {
         }
       }
     }
-
   }
 
   .colection {
@@ -398,7 +397,7 @@ body {
     }
   }
 }
-
+ 
 .divfooter {
   /* gap: 241px; */
   margin-top: 140px;
@@ -413,7 +412,6 @@ body {
       height: 16px;
     }
   }
- 
 
   a {
     color: var(--colors-neutral-500, #83888f);
@@ -424,8 +422,8 @@ body {
     line-height: 130%;
     letter-spacing: 0.92px;
     text-transform: uppercase;
-     @media (max-width: 374px) {
-         font-size: 8px;
-        }
+    @media (max-width: 374px) {
+      font-size: 8px;
+    }
   }
 }
