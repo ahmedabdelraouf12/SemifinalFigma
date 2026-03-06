@@ -1,0 +1,10 @@
+.box{
+  width:200px;
+  height:100px;
+  background-color: gray;
+}
+
+.box:focus{
+  border: 3px solid blue;
+  background-color: lightblue;
+}

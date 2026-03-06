@@ -214,7 +214,9 @@ body {
     .divLeft {
       gap: 49px;
       p {
-        color: var(--colors-neutral-900, #333d4b);
+        /* color: aqua; */
+        color: #333d4b;
+        /* color: var(--colors-neutral-900, #333d4b); */
         font-family: Fraunces;
         font-weight: 900;
         font-style: Black;
@@ -234,13 +236,19 @@ body {
           letter-spacing: 0px;
         }
       }
+      .cl-p-color {
+        color: #83888f;
+      }
+      .cl-p-color:hover {
+        color: #333d4b;
+      }
     }
     .divRight {
-      h2,
-      h3,
+      h2
+      /*, h3,
       h4,
       h5,
-      h6 {
+      h6*/ {
         color: var(--colors-neutral-500, #83888f);
         font-family: Fraunces;
         font-weight: 900;
@@ -249,12 +257,22 @@ body {
         line-height: 120%;
         letter-spacing: 0px;
       }
+      h3 {
+        font-family: Fraunces;
+        font-weight: 900;
+        font-style: Black;
+        font-size: clamp(28px, 9vw, 40px);
+        line-height: 120%;
+        letter-spacing: 0px;
+        color: black;
+      }
       gap: 80px;
       .divup {
         gap: 48px;
         .contant {
           background: var(--colors-neutral-100, #f4f1eb);
           padding: 24px 32px;
+          border-radius: 1rem;
           h3 {
             color: var(--colors-neutral-900, #333d4b);
             font-family: Fraunces;
@@ -275,12 +293,50 @@ body {
             letter-spacing: 0px;
           }
         }
+
+        .contant:focus {
+          border: 3px solid hsl(178.51deg 81.21% 29.22%);
+          /* background-color: lightblue; */
+        }
+        .cl-haver {
+          background-color: hsl(178.51deg 81.21% 29.22%);
+          color: #ffffff;
+          padding: 24px 32px;
+                    border-radius: 1rem;
+
+          h3 {
+            color: white;
+            font-family: Fraunces;
+            font-weight: 900;
+            font-style: Black;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: 0px;
+          }
+          p {
+            color: white;
+
+            font-family: Barlow;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 160%;
+            letter-spacing: 0px;
+          }
+        }
+        .contant:hover {
+          background-color: hsl(25.07deg 94.37% 86.08%);
+          color: black;
+        }
       }
       .orderSammary {
         background: var(--colors-neutral-900, #333d4b);
         padding: 48px 64px;
+                  border-radius: 1rem;
+
         @media (max-width: 767px) {
           padding: 48px 24px;
+          
         }
         span {
           color: var(--colors-neutral-0, #ffffff);
@@ -318,6 +374,7 @@ body {
         opacity: 1;
         padding: 16px 32px;
         border: 0;
+        border-radius: 10px;
         span {
           color: var(--colors-neutral-50, #fefcf7);
           font-family: Fraunces;
@@ -329,10 +386,20 @@ body {
           text-align: center;
         }
       }
+      .but {
+        background: var(--colors-teal-600, #0e8784);
+
+        /* gap: 12; */
+        opacity: 1;
+        padding: 16px 32px;
+        border: 0;
+        border-radius: 10px;
+      }
+      .but:hover {
+        background-color: hsl(178.33deg 54.55% 61.18%);
+      }
     }
   }
-
-  
 
   .divfooter {
     /* gap: 241px; */
@@ -363,4 +430,14 @@ body {
       }
     }
   }
+}
+
+cl-color-main {
+  color: var(--colors-teal-600, #0e8784);
+  font-family: Fraunces;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0px;
 }
